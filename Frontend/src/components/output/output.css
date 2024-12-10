@@ -1,0 +1,31 @@
+.output {
+  background-color: #1a1a1a;
+  width: 70%;
+  height: 60.8ch;
+  padding: 2rem;
+  transition: width 250ms ease;
+  border-radius: 16px;
+  border: 1px solid #333;
+}
+
+.output.active {
+  width: 50%;
+}
+
+.results text {
+  width: auto;
+  height: auto;
+  border: solid 1px #666;
+  padding: 4px;
+}
+
+.results label {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: white;
+  font-weight: 500;
+}
+.st {
+  background-color: aqua;
+}

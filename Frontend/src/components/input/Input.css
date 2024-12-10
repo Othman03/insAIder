@@ -1,0 +1,166 @@
+.Input {
+  min-width: 24rem;
+  margin: 0.25rem;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 60ch;
+  transition: transform 300ms ease;
+  border: 1px solid #333;
+}
+.Input.active {
+  transform: translateX(250px);
+}
+
+h2 {
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.label0,
+.label1 label,
+.label2 label,
+.label3 label {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: white;
+  font-weight: 500;
+}
+.label1 {
+  margin-bottom: 1rem;
+}
+.dropdown {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.dropdown0 {
+  position: relative;
+}
+
+.dropdown-button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #000;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  z-index: 50;
+}
+
+.dropdown-button:hover {
+  background-color: #222;
+  border-color: #444;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+  transition: height 0.3s ease, padding 0.3s ease;
+  z-index: 100;
+}
+.dropdown-content0 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+  transition: height 0.3s ease, padding 0.3s ease;
+  z-index: 100;
+}
+
+.dropdown-content a,
+.dropdown-content0 a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover,
+.dropdown-content0 a:hover {
+  background-color: #222;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input[type="text"],
+.form input[type="date"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.form input[type="text"]:focus,
+.form input[type="date"]:focus {
+  outline: none;
+  border-color: #666;
+  background-color: #222;
+}
+
+.start-button {
+  background-color: rgb(56, 160, 21);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: rgb(0, 129, 0);
+}
+
+/* Placeholder styling */
+.form input::placeholder {
+  color: #666;
+}
+
+/* Remove spinner from number inputs */
+.form input[type="number"]::-webkit-inner-spin-button,
+.form input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .Input {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
